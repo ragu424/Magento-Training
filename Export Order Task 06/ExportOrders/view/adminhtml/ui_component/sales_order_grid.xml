@@ -1,0 +1,27 @@
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Ui/etc/definition.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="export_orders_csv">
+                <settings>
+                    <type>export_orders_csv</type>
+                    <label translate="true">Export Orders as CSV</label>
+                    <url path="ragu_exportorders/order/export/format/csv"/>
+                </settings>
+            </action>
+            <action name="export_orders_json">
+                <settings>
+                    <type>export_orders_json</type>
+                    <label translate="true">Export Orders as JSON</label>
+                    <url path="ragu_exportorders/order/export/format/json"/>
+                </settings>
+            </action>
+            <action name="export_orders_excel">
+                <settings>
+                    <type>export_orders_excel</type>
+                    <label translate="true">Export Orders as Excel</label>
+                    <url path="ragu_exportorders/order/export/format/xlsx"/>
+                </settings>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>

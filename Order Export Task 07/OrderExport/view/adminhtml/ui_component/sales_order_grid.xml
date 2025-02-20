@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    
+    <listingToolbar name="listing_top">
+        <exportButton name="export_button">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="options" xsi:type="array">
+                        <!-- Mass Export CSV Option -->
+                        <item name="mass_export_sales_csv" xsi:type="array">
+                            <item name="value" xsi:type="string">mass_export_sales_csv</item>
+                            <item name="label" xsi:type="string" translate="true">Export CSV file</item>
+                            <item name="url" xsi:type="string">ragu_orderexport/sales/export/csv</item>
+                        </item>
+
+                        <!-- Mass Export JSON Option -->
+                        <item name="mass_export_sales_json" xsi:type="array">
+                            <item name="value" xsi:type="string">mass_export_sales_json</item>
+                            <item name="label" xsi:type="string" translate="true">Export JSON file</item>
+                            <item name="url" xsi:type="string">ragu_orderexport/sales/export/json</item>
+                        </item>
+
+                        <!-- Mass Export Excel Option -->
+                        <item name="mass_export_sales_excel" xsi:type="array">
+                            <item name="value" xsi:type="string">mass_export_sales_excel</item>
+                            <item name="label" xsi:type="string" translate="true">Export Excel file</item>
+                            <item name="url" xsi:type="string">ragu_orderexport/sales/export/excel</item>
+                        </item>
+                    </item>
+                </item>
+            </argument>
+        </exportButton>
+    </listingToolbar>
+    
+</listing>

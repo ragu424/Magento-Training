@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <custom>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>Ragu\CanadaShipping\Model\Carrier\CanadaShipping</model>
+                <name>Canada shipping Method</name>
+                <handling_type>F</handling_type>
+                <price>5.00</price>
+                <title>5% cart price as canada shipping amount</title>
+                <type>I</type>
+            </custom>
+        </carriers>
+    </default>
+</config>
